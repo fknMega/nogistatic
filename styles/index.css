@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffccd5; /* Soft pink background */
+    font-family: 'Roboto', sans-serif;
+
+   }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.content {
+    
+    text-align: center;
+    color: #fff;
+    z-index: 9;
+    /* blurred background */
+    background: rgba(0, 0, 0, 0.175);
+    padding: 59px 30px 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    background-image: url('https://media.istockphoto.com/id/458297017/photo/hello-kitty-pattern.jpg?s=612x612&w=0&k=20&c=IvVb5qyDu9_E_M0LCDPGFcpSIzr016ZHm9ZrXANQhQs=');
+
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: #a82853; /* Soft red */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
+    /* blur what is behind the text */
+    backdrop-filter: blur(1px);
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.yes-button {
+    background-color: #ff69b4; /* Hot pink */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
+
+}
+
+.no-button {
+    background-color: #db7093; /* Pale violet red */
+    font-weight: bold;
+    text-shadow: 5px 25px 4px rgb(0, 0, 0);
+
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+.fa-heart {
+    color: rgb(60, 0, 60);
+    font-size: 25px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(110vh) ;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+    }
+}
