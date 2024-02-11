@@ -29,13 +29,14 @@ body, html {
 h1 {
     font-family: 'Lobster', cursive;
     font-size: 2.5rem;
-    color: #a82853; /* Soft red */
+    color: #ee38c7; /* Soft red */
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
     /* blur what is behind the text */
     backdrop-filter: blur(1px);
     padding: 10px;
     border-radius: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
 
 }
 
@@ -82,7 +83,7 @@ a:hover {
 }
 .secret {
     position: absolute;
-    top: 25%; /* Adjust this value as needed */
+    top: 20%; /* Adjust this value as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for exact centering */
     z-index: 10; /* Ensure it's above other content */
