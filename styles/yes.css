@@ -25,6 +25,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.from-georgi {
+    font-size: 15px;
+    color: #ff7a7a; /* Valentine pink */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
 .arrow-container {
     display: flex;
     justify-content: center;
